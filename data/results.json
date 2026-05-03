@@ -44,7 +44,7 @@
         "confidence": 0.8483
       }
     ],
-    "latency_seconds": 0.032
+    "latency_seconds": 0.023
   },
   {
     "id": "PUB-02",
@@ -91,7 +91,7 @@
         "confidence": 0.3889
       }
     ],
-    "latency_seconds": 0.026
+    "latency_seconds": 0.022
   },
   {
     "id": "PUB-03",
@@ -138,7 +138,7 @@
         "confidence": 0.4681
       }
     ],
-    "latency_seconds": 0.017
+    "latency_seconds": 0.02
   },
   {
     "id": "PUB-04",
@@ -185,7 +185,7 @@
         "confidence": 0.4305
       }
     ],
-    "latency_seconds": 0.024
+    "latency_seconds": 0.027
   },
   {
     "id": "PUB-05",
@@ -232,7 +232,7 @@
         "confidence": 0.5103
       }
     ],
-    "latency_seconds": 0.016
+    "latency_seconds": 0.019
   },
   {
     "id": "PUB-06",
@@ -279,7 +279,7 @@
         "confidence": 0.5486
       }
     ],
-    "latency_seconds": 0.016
+    "latency_seconds": 0.021
   },
   {
     "id": "PUB-07",
@@ -326,7 +326,7 @@
         "confidence": 0.2605
       }
     ],
-    "latency_seconds": 0.029
+    "latency_seconds": 0.023
   },
   {
     "id": "PUB-08",
@@ -373,7 +373,7 @@
         "confidence": 0.4302
       }
     ],
-    "latency_seconds": 0.041
+    "latency_seconds": 0.02
   },
   {
     "id": "PUB-09",
