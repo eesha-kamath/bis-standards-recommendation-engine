@@ -71,6 +71,9 @@ QUERY_EXPANSIONS = {
     "gi pipe": "mild steel tube water supply galvanized IS 1239",
     "roof tile": "burnt clay roof tiles ceramic",
     "clay tile": "burnt clay roof tiles ceramic IS 2690",
+    "glass sheet": "flat glass sheets glazing IS 2835",
+    "glass pane": "flat glass sheets glazing IS 2835",
+    "window glass": "flat glass sheets glazing IS 2835",
 }
 
 # ── Load indexes (once at module import)

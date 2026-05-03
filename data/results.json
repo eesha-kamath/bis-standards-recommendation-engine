@@ -44,7 +44,7 @@
         "confidence": 0.8483
       }
     ],
-    "latency_seconds": 0.03
+    "latency_seconds": 0.032
   },
   {
     "id": "PUB-02",
@@ -91,7 +91,7 @@
         "confidence": 0.3889
       }
     ],
-    "latency_seconds": 0.024
+    "latency_seconds": 0.026
   },
   {
     "id": "PUB-03",
@@ -101,10 +101,10 @@
     ],
     "retrieved_standards": [
       "IS 458: 2003",
+      "IS 5382: 1985",
       "IS 9893: 1981",
       "IS 12440: 1988",
-      "IS 13990: 1994",
-      "IS 12592: 2002"
+      "IS 13990: 1994"
     ],
     "recommendations": [
       {
@@ -114,31 +114,31 @@
         "confidence": 1.0
       },
       {
+        "standard": "IS 5382: 1985",
+        "title": "RUBBER SEALIG RINGS FOR GAS MAINS, WATER MAINS AND SEWERS (F",
+        "rationale": "[Retrieval score: 0.477] IS 5382 : 1985 RUBBER SEALIG RINGS FOR GAS MAINS, WATER MAINS AND SEWERS (First Revision) 1. Scope -- Requirements for materials used for vulcanized solid rubber sealing rings for water supply and dra\u2026",
+        "confidence": 0.4768
+      },
+      {
         "standard": "IS 9893: 1981",
         "title": "PRECAST CONCRETE BLOCKS FOR LINTELS AND SILLS\n\n1. S",
-        "rationale": "[Retrieval score: 0.471] IS 9893 : 1981 PRECAST CONCRETE BLOCKS FOR LINTELS AND SILLS 1. Scope -- Requirements of precast concrete lintels and sills. 2. Shape and Dimensions 2.1 Lintels 2.1.1 Reinforced concrete lintels -- Ma\u2026",
-        "confidence": 0.4715
+        "rationale": "[Retrieval score: 0.473] IS 9893 : 1981 PRECAST CONCRETE BLOCKS FOR LINTELS AND SILLS 1. Scope -- Requirements of precast concrete lintels and sills. 2. Shape and Dimensions 2.1 Lintels 2.1.1 Reinforced concrete lintels -- Ma\u2026",
+        "confidence": 0.4733
       },
       {
         "standard": "IS 12440: 1988",
         "title": "PRECAST CONCRETE STONE MASONRY BLOCKS\n\n1. S",
-        "rationale": "[Retrieval score: 0.467] IS 12440 : 1988 PRECAST CONCRETE STONE MASONRY BLOCKS 1. Scope -- Requirements of precast concrete stone masonry blocks, used in the construction of load bearing and non-load bearing walls. 3.2 For 20\u2026",
-        "confidence": 0.467
+        "rationale": "[Retrieval score: 0.469] IS 12440 : 1988 PRECAST CONCRETE STONE MASONRY BLOCKS 1. Scope -- Requirements of precast concrete stone masonry blocks, used in the construction of load bearing and non-load bearing walls. 3.2 For 20\u2026",
+        "confidence": 0.4688
       },
       {
         "standard": "IS 13990: 1994",
         "title": "PRECAST REINFORCED CONCRETE PLANKS AND JOISTS FOR ROOFING AND FLOORING\n\n1. S",
-        "rationale": "[Retrieval score: 0.467] IS 13990 : 1994 PRECAST REINFORCED CONCRETE PLANKS AND JOISTS FOR ROOFING AND FLOORING 1. Scope --Requirements for precast reinforced concrete planks and joist used for construction of roofs and floor\u2026",
-        "confidence": 0.4666
-      },
-      {
-        "standard": "IS 12592: 2002",
-        "title": "PRECAST CONCRETE MANHOLE COVER AND FRAME (F",
-        "rationale": "[Retrieval score: 0.465] IS 12592 : 2002 PRECAST CONCRETE MANHOLE COVER AND FRAME (First Revision) 1. Scope Requirements for precast steel reinforced cement concrete manhole covers and frames intended for use in sewerage and\u2026",
-        "confidence": 0.4651
+        "rationale": "[Retrieval score: 0.468] IS 13990 : 1994 PRECAST REINFORCED CONCRETE PLANKS AND JOISTS FOR ROOFING AND FLOORING 1. Scope --Requirements for precast reinforced concrete planks and joist used for construction of roofs and floor\u2026",
+        "confidence": 0.4681
       }
     ],
-    "latency_seconds": 0.023
+    "latency_seconds": 0.017
   },
   {
     "id": "PUB-04",
@@ -163,29 +163,29 @@
       {
         "standard": "IS 2185 (PART 1): 1979",
         "title": "CONCRETE MASONRY UNITS PART 1 HOLLOW AND SOLID CONCRETE BLOCKS (S",
-        "rationale": "[Retrieval score: 0.694] IS 2185 (PART 1) : 1979 CONCRETE MASONRY UNITS PART 1 HOLLOW AND SOLID CONCRETE BLOCKS (Second Revision) 1. Scope -- Requirements for the following concrete masonry building units which are used in co\u2026",
-        "confidence": 0.6938
+        "rationale": "[Retrieval score: 0.693] IS 2185 (PART 1) : 1979 CONCRETE MASONRY UNITS PART 1 HOLLOW AND SOLID CONCRETE BLOCKS (Second Revision) 1. Scope -- Requirements for the following concrete masonry building units which are used in co\u2026",
+        "confidence": 0.6934
       },
       {
         "standard": "IS 10360: 1982",
         "title": "LIME-POZZOLANA CONCRETE BLOCKS FOR PAVING (S",
         "rationale": "[Retrieval score: 0.463] IS 10360 : 1982 LIME-POZZOLANA CONCRETE BLOCKS FOR PAVING (Second Revision) 1. Scope -- Covers dimensions, quality and strength requirements of lime-pozzolana concrete blocks for use in paving. 2. Gen\u2026",
-        "confidence": 0.4632
+        "confidence": 0.4633
       },
       {
         "standard": "IS 2185 (PART 3): 1984",
         "title": "CONCRETE MASONRY UNITS PART 3 AUTOCLAVED CELLULAR (AERATED) CONCRETE BLOCKS (F",
-        "rationale": "[Retrieval score: 0.444] IS 2185 (PART 3) : 1984 CONCRETE MASONRY UNITS PART 3 AUTOCLAVED CELLULAR (AERATED) CONCRETE BLOCKS (First Revision) 1. Scope-- Covers the requirements of autoclaved cellular (aerated) concrete blocks\u2026",
-        "confidence": 0.4435
+        "rationale": "[Retrieval score: 0.445] IS 2185 (PART 3) : 1984 CONCRETE MASONRY UNITS PART 3 AUTOCLAVED CELLULAR (AERATED) CONCRETE BLOCKS (First Revision) 1. Scope-- Covers the requirements of autoclaved cellular (aerated) concrete blocks\u2026",
+        "confidence": 0.4445
       },
       {
         "standard": "IS 9142: 1979",
         "title": "ARTIFICIAL LIGHTWEIGHT AGGREGATES FOR CONCRETE MASONRY UNITS\n\n1. S",
-        "rationale": "[Retrieval score: 0.429] IS 9142 : 1979 ARTIFICIAL LIGHTWEIGHT AGGREGATES FOR CONCRETE MASONRY UNITS 1. Scope -- Requirements of artificial lightweight aggregates, such as foamed blast furnace slag, bloated clay aggregate, si\u2026",
-        "confidence": 0.4295
+        "rationale": "[Retrieval score: 0.430] IS 9142 : 1979 ARTIFICIAL LIGHTWEIGHT AGGREGATES FOR CONCRETE MASONRY UNITS 1. Scope -- Requirements of artificial lightweight aggregates, such as foamed blast furnace slag, bloated clay aggregate, si\u2026",
+        "confidence": 0.4305
       }
     ],
-    "latency_seconds": 0.026
+    "latency_seconds": 0.024
   },
   {
     "id": "PUB-05",
@@ -211,28 +211,28 @@
         "standard": "IS 14871: 2000",
         "title": "PRODUCTS IN FIBRE REINFORCED CEMENT--LONG CORRUGATED OR ASYMMETRICAL SECTION\nSHEETS AND FITTINGS FOR ROOFING AND CLADDING\n\n1. S",
         "rationale": "[Retrieval score: 0.698] IS 14871 : 2000 PRODUCTS IN FIBRE REINFORCED CEMENT--LONG CORRUGATED OR ASYMMETRICAL SECTION SHEETS AND FITTINGS FOR ROOFING AND CLADDING 1. Scope 1.1 This standard covers the requirement for straight\u2026",
-        "confidence": 0.6984
+        "confidence": 0.6978
       },
       {
         "standard": "IS 13008: 1990",
         "title": "SHALLOW CORRUGATED ASBESTOS CEMENT SHEETS\n\n1. S",
-        "rationale": "[Retrieval score: 0.689] IS 13008 : 1990 SHALLOW CORRUGATED ASBESTOS CEMENT SHEETS 1. Scope -- Covers the requirements for materials, dimensions and tests for shallow corrugated asbestos cement sheets. 3.2 Impermeability -- S\u2026",
-        "confidence": 0.6893
+        "rationale": "[Retrieval score: 0.690] IS 13008 : 1990 SHALLOW CORRUGATED ASBESTOS CEMENT SHEETS 1. Scope -- Covers the requirements for materials, dimensions and tests for shallow corrugated asbestos cement sheets. 3.2 Impermeability -- S\u2026",
+        "confidence": 0.6897
       },
       {
         "standard": "IS 1626: 1984",
         "title": "ASBESTOS CEMENT BUILDING PIPES AND PIPE FITTINGS, GUTTERS AND GUTER FITTINGS\nAND ROOF FITTINGS PART 3 ROOF FITTINGS\n(S",
-        "rationale": "[Retrieval score: 0.656] IS 1626 : 1984 ASBESTOS CEMENT BUILDING PIPES AND PIPE FITTINGS, GUTTERS AND GUTER FITTINGS AND ROOF FITTINGS PART 3 ROOF FITTINGS (Second Revision) 1. Scope -- Requirements of asbestos cement roofing\u2026",
-        "confidence": 0.6558
+        "rationale": "[Retrieval score: 0.655] IS 1626 : 1984 ASBESTOS CEMENT BUILDING PIPES AND PIPE FITTINGS, GUTTERS AND GUTER FITTINGS AND ROOF FITTINGS PART 3 ROOF FITTINGS (Second Revision) 1. Scope -- Requirements of asbestos cement roofing\u2026",
+        "confidence": 0.6554
       },
       {
         "standard": "IS 10388: 1982",
         "title": "CORRUGATED COIR, WOODWOOL, CEMENT ROOFING SHEETS\n\n1. S",
-        "rationale": "[Retrieval score: 0.511] IS 10388 : 1982 CORRUGATED COIR, WOODWOOL, CEMENT ROOFING SHEETS 1. Scope -- Requirements regarding materials, dimensions and physical properties for corrugated roofing sheets made from coir, woodwool\u2026",
-        "confidence": 0.5112
+        "rationale": "[Retrieval score: 0.510] IS 10388 : 1982 CORRUGATED COIR, WOODWOOL, CEMENT ROOFING SHEETS 1. Scope -- Requirements regarding materials, dimensions and physical properties for corrugated roofing sheets made from coir, woodwool\u2026",
+        "confidence": 0.5103
       }
     ],
-    "latency_seconds": 0.032
+    "latency_seconds": 0.016
   },
   {
     "id": "PUB-06",
@@ -276,10 +276,10 @@
         "standard": "IS 8042: 1989",
         "title": "WHITE PORTLAND CEMENT (S",
         "rationale": "[Retrieval score: 0.549] IS 8042 : 1989 WHITE PORTLAND CEMENT (Second Revision) 1 Scope 1.1 Manufacture and chemical and physical requirements of white Portland cement. Note\u00adWhite Portland cement is generally used for archite\u2026",
-        "confidence": 0.5487
+        "confidence": 0.5486
       }
     ],
-    "latency_seconds": 0.031
+    "latency_seconds": 0.016
   },
   {
     "id": "PUB-07",
@@ -326,7 +326,7 @@
         "confidence": 0.2605
       }
     ],
-    "latency_seconds": 0.026
+    "latency_seconds": 0.029
   },
   {
     "id": "PUB-08",
@@ -373,7 +373,7 @@
         "confidence": 0.4302
       }
     ],
-    "latency_seconds": 0.034
+    "latency_seconds": 0.041
   },
   {
     "id": "PUB-09",
@@ -411,16 +411,16 @@
         "standard": "IS 778: 1984",
         "title": "COPPER ALLOY GATE, GLOBE AND CHECK VALVES FOR WATER WORKS PURPOSES (F",
         "rationale": "[Retrieval score: 0.247] IS 778 : 1984 COPPER ALLOY GATE, GLOBE AND CHECK VALVES FOR WATER WORKS PURPOSES (Fourth Revision) 1. Scope -- Requirements of copper alloy gate, globe and check valves of nominal sizes 8 to 100 mm su\u2026",
-        "confidence": 0.2471
+        "confidence": 0.247
       },
       {
         "standard": "IS 5539: 1969",
         "title": "PRESERVATIVE TREATED PLYWOOD\n\n1. S",
         "rationale": "[Retrieval score: 0.246] IS 5539 : 1969 PRESERVATIVE TREATED PLYWOOD 1. Scope \u00ad Treatment of plywood for protection against fungi, termites and other insects and marine borers and requiremments of preservatives treated plywoo\u2026",
-        "confidence": 0.2457
+        "confidence": 0.2456
       }
     ],
-    "latency_seconds": 0.029
+    "latency_seconds": 0.022
   },
   {
     "id": "PUB-10",
