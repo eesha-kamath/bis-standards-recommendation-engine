@@ -1,6 +1,5 @@
 .env
+index/
 __pycache__/
 *.pyc
-index/*.pkl
-index/sp21.txt
-results.json
+*.pdf

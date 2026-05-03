@@ -15,7 +15,7 @@ from sklearn.feature_extraction.text import TfidfVectorizer
 from rank_bm25 import BM25Okapi
 
 PDF_PATH  = "dataset.pdf"
-INDEX_DIR = "./index"
+INDEX_DIR = "../index"
 Path(INDEX_DIR).mkdir(exist_ok=True)
 
 # 1. Extract text from PDF 

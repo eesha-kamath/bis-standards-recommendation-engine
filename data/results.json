@@ -1,0 +1,472 @@
+[
+  {
+    "id": "PUB-01",
+    "query": "We are a small enterprise manufacturing 33 Grade Ordinary Portland Cement. Which BIS standard covers the chemical and physical requirements for our product?",
+    "expected_standards": [
+      "IS 269: 1989"
+    ],
+    "retrieved_standards": [
+      "IS 269: 1989",
+      "IS 8043: 1991",
+      "IS 12269: 1987",
+      "IS 8042: 1989",
+      "IS 8112: 1989"
+    ],
+    "recommendations": [
+      {
+        "standard": "IS 269: 1989",
+        "title": "ORDINARY PORTLAND CEMENT, 33 GRADE (F",
+        "rationale": "[Retrieval score: 0.989] IS 269 : 1989 ORDINARY PORTLAND CEMENT, 33 GRADE (Fourth Revision) 1. Scope -- Covers the manufacture and chemical and physical requirements of 33 grade ordinary Portland cement. 2. Chemical Requireme\u2026",
+        "confidence": 0.9891
+      },
+      {
+        "standard": "IS 8043: 1991",
+        "title": "HYDROPHOBIC PORTLAND CEMENT (S",
+        "rationale": "[Retrieval score: 0.891] IS 8043 : 1991 HYDROPHOBIC PORTLAND CEMENT (Second Revision) 1 Scope -- Manufacture and chemical and physical requirements of hydrophobic Portland cement. Note--Hydrophobic cement deteriorates very li\u2026",
+        "confidence": 0.8913
+      },
+      {
+        "standard": "IS 12269: 1987",
+        "title": "53 GRADE ORDINARY PORTLAND CEMENT\n\n1. S",
+        "rationale": "[Retrieval score: 0.889] IS 12269 : 1987 53 GRADE ORDINARY PORTLAND CEMENT 1. Scope -- Manufacture, chemical and physical requirments of 53 Grade ordinary Portland cement. Note--For certain specialized works, such as prestres\u2026",
+        "confidence": 0.8894
+      },
+      {
+        "standard": "IS 8042: 1989",
+        "title": "WHITE PORTLAND CEMENT (S",
+        "rationale": "[Retrieval score: 0.871] IS 8042 : 1989 WHITE PORTLAND CEMENT (Second Revision) 1 Scope 1.1 Manufacture and chemical and physical requirements of white Portland cement. Note\u00adWhite Portland cement is generally used for archite\u2026",
+        "confidence": 0.8709
+      },
+      {
+        "standard": "IS 8112: 1989",
+        "title": "43 GRADE ORDINARY PORTLAND CEMENT (F",
+        "rationale": "[Retrieval score: 0.848] IS 8112 : 1989 43 GRADE ORDINARY PORTLAND CEMENT (First Revision) 1. Scope -- Manufacture, chemical and physical requirements of 43 grade ordinary Portland cement. Note--This specification covers the\u2026",
+        "confidence": 0.8483
+      }
+    ],
+    "latency_seconds": 0.03
+  },
+  {
+    "id": "PUB-02",
+    "query": "I need to comply with the regulations for coarse and fine aggregates derived from natural sources intended for use in structural concrete.",
+    "expected_standards": [
+      "IS 383: 1970"
+    ],
+    "retrieved_standards": [
+      "IS 383: 1970",
+      "IS 9510: 1980",
+      "IS 6579: 1981",
+      "IS 2686: 1977",
+      "IS 3068: 1986"
+    ],
+    "recommendations": [
+      {
+        "standard": "IS 383: 1970",
+        "title": "COARSE AND FINE AGGREGATES FROM NATURAL SOURCES FOR CONCRETE (S",
+        "rationale": "[Retrieval score: 1.000] IS 383 : 1970 COARSE AND FINE AGGREGATES FROM NATURAL SOURCES FOR CONCRETE (Second Revision) 1. Scope -- Requirements for aggregates, crushed or uncrushed, derived from natural sources for use in the\u2026",
+        "confidence": 1.0
+      },
+      {
+        "standard": "IS 9510: 1980",
+        "title": "BITUMEN MASTIC, ACID",
+        "rationale": "[Retrieval score: 0.625] IS 9510 : 1980 BITUMEN MASTIC, ACID \u00ad RESISTING GRADE 1. Scope -- Requirement for bitumen mastic of acidresisting grade used as an underlay to acid-proof bricks, tiles or stones. 2. Materials 2.1 Bitu\u2026",
+        "confidence": 0.6248
+      },
+      {
+        "standard": "IS 6579: 1981",
+        "title": "COARSE AGGREGATE FOR WATER BOUND MACADAM (F",
+        "rationale": "[Retrieval score: 0.414] IS 6579 : 1981 COARSE AGGREGATE FOR WATER BOUND MACADAM (First Revision) 1. Scope -- Specifies the quality, physical properties and grading of coarse aggregates suitable for use in WBM construction. 2\u2026",
+        "confidence": 0.4141
+      },
+      {
+        "standard": "IS 2686: 1977",
+        "title": "CINDER AS FINE AGGREGATES FOR USE IN LIME CONCRETE (F",
+        "rationale": "[Retrieval score: 0.392] IS 2686 : 1977 CINDER AS FINE AGGREGATES FOR USE IN LIME CONCRETE (First Revision) 1. Scope -- Requirements for cinder for use as aggregates in lime concrete. 2. General -- Cinder aggregates shall be\u2026",
+        "confidence": 0.3923
+      },
+      {
+        "standard": "IS 3068: 1986",
+        "title": "BROKEN BRICK (BURNT CLAY) COARSE AGGREGATE FOR USE IN LIME CONCRETE (S",
+        "rationale": "[Retrieval score: 0.389] IS 3068 : 1986 BROKEN BRICK (BURNT CLAY) COARSE AGGREGATE FOR USE IN LIME CONCRETE (Second Revision) 1. Scope -- Requirements for coarse aggregate prepared from broken bricks (burnt clay) for use in l\u2026",
+        "confidence": 0.3889
+      }
+    ],
+    "latency_seconds": 0.024
+  },
+  {
+    "id": "PUB-03",
+    "query": "What is the official specification for manufacturing precast concrete pipes, both with and without reinforcement, for water mains?",
+    "expected_standards": [
+      "IS 458: 2003"
+    ],
+    "retrieved_standards": [
+      "IS 458: 2003",
+      "IS 9893: 1981",
+      "IS 12440: 1988",
+      "IS 13990: 1994",
+      "IS 12592: 2002"
+    ],
+    "recommendations": [
+      {
+        "standard": "IS 458: 2003",
+        "title": "PRECAST CONCRETE PIPES (WITH AND WITHOUT REINFORCEMENT)",
+        "rationale": "[Retrieval score: 1.000] IS 458 : 2003 PRECAST CONCRETE PIPES (WITH AND WITHOUT REINFORCEMENT) \u00ad SPECIFICATION (Fourth Revision) 1. Scope -- Requirements for reinforced and unreinforced precast cement concrete pipes, of both\u2026",
+        "confidence": 1.0
+      },
+      {
+        "standard": "IS 9893: 1981",
+        "title": "PRECAST CONCRETE BLOCKS FOR LINTELS AND SILLS\n\n1. S",
+        "rationale": "[Retrieval score: 0.471] IS 9893 : 1981 PRECAST CONCRETE BLOCKS FOR LINTELS AND SILLS 1. Scope -- Requirements of precast concrete lintels and sills. 2. Shape and Dimensions 2.1 Lintels 2.1.1 Reinforced concrete lintels -- Ma\u2026",
+        "confidence": 0.4715
+      },
+      {
+        "standard": "IS 12440: 1988",
+        "title": "PRECAST CONCRETE STONE MASONRY BLOCKS\n\n1. S",
+        "rationale": "[Retrieval score: 0.467] IS 12440 : 1988 PRECAST CONCRETE STONE MASONRY BLOCKS 1. Scope -- Requirements of precast concrete stone masonry blocks, used in the construction of load bearing and non-load bearing walls. 3.2 For 20\u2026",
+        "confidence": 0.467
+      },
+      {
+        "standard": "IS 13990: 1994",
+        "title": "PRECAST REINFORCED CONCRETE PLANKS AND JOISTS FOR ROOFING AND FLOORING\n\n1. S",
+        "rationale": "[Retrieval score: 0.467] IS 13990 : 1994 PRECAST REINFORCED CONCRETE PLANKS AND JOISTS FOR ROOFING AND FLOORING 1. Scope --Requirements for precast reinforced concrete planks and joist used for construction of roofs and floor\u2026",
+        "confidence": 0.4666
+      },
+      {
+        "standard": "IS 12592: 2002",
+        "title": "PRECAST CONCRETE MANHOLE COVER AND FRAME (F",
+        "rationale": "[Retrieval score: 0.465] IS 12592 : 2002 PRECAST CONCRETE MANHOLE COVER AND FRAME (First Revision) 1. Scope Requirements for precast steel reinforced cement concrete manhole covers and frames intended for use in sewerage and\u2026",
+        "confidence": 0.4651
+      }
+    ],
+    "latency_seconds": 0.023
+  },
+  {
+    "id": "PUB-04",
+    "query": "Our company is shifting to manufacturing hollow and solid lightweight concrete masonry blocks. What standard outlines the dimensions and physical requirements?",
+    "expected_standards": [
+      "IS 2185 (Part 2): 1983"
+    ],
+    "retrieved_standards": [
+      "IS 2185 (PART 2): 1983",
+      "IS 2185 (PART 1): 1979",
+      "IS 10360: 1982",
+      "IS 2185 (PART 3): 1984",
+      "IS 9142: 1979"
+    ],
+    "recommendations": [
+      {
+        "standard": "IS 2185 (PART 2): 1983",
+        "title": "CONCRETE MASONRY UNITS PART 2 HOLLOW AND SOLID LIGHTWEIGHT CONCRETE BLOCKS (F",
+        "rationale": "[Retrieval score: 1.000] IS 2185 (PART 2) : 1983 CONCRETE MASONRY UNITS PART 2 HOLLOW AND SOLID LIGHTWEIGHT CONCRETE BLOCKS (First Revision) 1. Scope -- Covers the following lightweight concrete masonry building units which a\u2026",
+        "confidence": 1.0
+      },
+      {
+        "standard": "IS 2185 (PART 1): 1979",
+        "title": "CONCRETE MASONRY UNITS PART 1 HOLLOW AND SOLID CONCRETE BLOCKS (S",
+        "rationale": "[Retrieval score: 0.694] IS 2185 (PART 1) : 1979 CONCRETE MASONRY UNITS PART 1 HOLLOW AND SOLID CONCRETE BLOCKS (Second Revision) 1. Scope -- Requirements for the following concrete masonry building units which are used in co\u2026",
+        "confidence": 0.6938
+      },
+      {
+        "standard": "IS 10360: 1982",
+        "title": "LIME-POZZOLANA CONCRETE BLOCKS FOR PAVING (S",
+        "rationale": "[Retrieval score: 0.463] IS 10360 : 1982 LIME-POZZOLANA CONCRETE BLOCKS FOR PAVING (Second Revision) 1. Scope -- Covers dimensions, quality and strength requirements of lime-pozzolana concrete blocks for use in paving. 2. Gen\u2026",
+        "confidence": 0.4632
+      },
+      {
+        "standard": "IS 2185 (PART 3): 1984",
+        "title": "CONCRETE MASONRY UNITS PART 3 AUTOCLAVED CELLULAR (AERATED) CONCRETE BLOCKS (F",
+        "rationale": "[Retrieval score: 0.444] IS 2185 (PART 3) : 1984 CONCRETE MASONRY UNITS PART 3 AUTOCLAVED CELLULAR (AERATED) CONCRETE BLOCKS (First Revision) 1. Scope-- Covers the requirements of autoclaved cellular (aerated) concrete blocks\u2026",
+        "confidence": 0.4435
+      },
+      {
+        "standard": "IS 9142: 1979",
+        "title": "ARTIFICIAL LIGHTWEIGHT AGGREGATES FOR CONCRETE MASONRY UNITS\n\n1. S",
+        "rationale": "[Retrieval score: 0.429] IS 9142 : 1979 ARTIFICIAL LIGHTWEIGHT AGGREGATES FOR CONCRETE MASONRY UNITS 1. Scope -- Requirements of artificial lightweight aggregates, such as foamed blast furnace slag, bloated clay aggregate, si\u2026",
+        "confidence": 0.4295
+      }
+    ],
+    "latency_seconds": 0.026
+  },
+  {
+    "id": "PUB-05",
+    "query": "Looking for the standard detailing corrugated and semi-corrugated asbestos cement sheets used for roofing and cladding.",
+    "expected_standards": [
+      "IS 459: 1992"
+    ],
+    "retrieved_standards": [
+      "IS 459: 1992",
+      "IS 14871: 2000",
+      "IS 13008: 1990",
+      "IS 1626: 1984",
+      "IS 10388: 1982"
+    ],
+    "recommendations": [
+      {
+        "standard": "IS 459: 1992",
+        "title": "CORRUGATED AND SEMI-CORRUGATED ASBESTOS CEMENT SHEETS (T",
+        "rationale": "[Retrieval score: 1.000] IS 459 : 1992 CORRUGATED AND SEMI-CORRUGATED ASBESTOS CEMENT SHEETS (Third Revision) 1. Scope-- Covers corrugated and semi-corrigutated asbestos cement sheets, designed to provide structural weather e\u2026",
+        "confidence": 1.0
+      },
+      {
+        "standard": "IS 14871: 2000",
+        "title": "PRODUCTS IN FIBRE REINFORCED CEMENT--LONG CORRUGATED OR ASYMMETRICAL SECTION\nSHEETS AND FITTINGS FOR ROOFING AND CLADDING\n\n1. S",
+        "rationale": "[Retrieval score: 0.698] IS 14871 : 2000 PRODUCTS IN FIBRE REINFORCED CEMENT--LONG CORRUGATED OR ASYMMETRICAL SECTION SHEETS AND FITTINGS FOR ROOFING AND CLADDING 1. Scope 1.1 This standard covers the requirement for straight\u2026",
+        "confidence": 0.6984
+      },
+      {
+        "standard": "IS 13008: 1990",
+        "title": "SHALLOW CORRUGATED ASBESTOS CEMENT SHEETS\n\n1. S",
+        "rationale": "[Retrieval score: 0.689] IS 13008 : 1990 SHALLOW CORRUGATED ASBESTOS CEMENT SHEETS 1. Scope -- Covers the requirements for materials, dimensions and tests for shallow corrugated asbestos cement sheets. 3.2 Impermeability -- S\u2026",
+        "confidence": 0.6893
+      },
+      {
+        "standard": "IS 1626: 1984",
+        "title": "ASBESTOS CEMENT BUILDING PIPES AND PIPE FITTINGS, GUTTERS AND GUTER FITTINGS\nAND ROOF FITTINGS PART 3 ROOF FITTINGS\n(S",
+        "rationale": "[Retrieval score: 0.656] IS 1626 : 1984 ASBESTOS CEMENT BUILDING PIPES AND PIPE FITTINGS, GUTTERS AND GUTER FITTINGS AND ROOF FITTINGS PART 3 ROOF FITTINGS (Second Revision) 1. Scope -- Requirements of asbestos cement roofing\u2026",
+        "confidence": 0.6558
+      },
+      {
+        "standard": "IS 10388: 1982",
+        "title": "CORRUGATED COIR, WOODWOOL, CEMENT ROOFING SHEETS\n\n1. S",
+        "rationale": "[Retrieval score: 0.511] IS 10388 : 1982 CORRUGATED COIR, WOODWOOL, CEMENT ROOFING SHEETS 1. Scope -- Requirements regarding materials, dimensions and physical properties for corrugated roofing sheets made from coir, woodwool\u2026",
+        "confidence": 0.5112
+      }
+    ],
+    "latency_seconds": 0.032
+  },
+  {
+    "id": "PUB-06",
+    "query": "What is the Indian Standard covering the manufacture, chemical, and physical requirements for Portland slag cement?",
+    "expected_standards": [
+      "IS 455: 1989"
+    ],
+    "retrieved_standards": [
+      "IS 455: 1989",
+      "IS 12330: 1988",
+      "IS 8112: 1989",
+      "IS 6523: 1983",
+      "IS 8042: 1989"
+    ],
+    "recommendations": [
+      {
+        "standard": "IS 455: 1989",
+        "title": "PORTLAND SLAG CEMENT (F",
+        "rationale": "[Retrieval score: 1.000] IS 455 : 1989 PORTLAND SLAG CEMENT (Fourth Revison) SP 21 : 2005 1. Scope-- Covers the manufacture and chemical and physical requirements for Portland slag cement. 2. Chemical Requirement Percent, Max\u2026",
+        "confidence": 1.0
+      },
+      {
+        "standard": "IS 12330: 1988",
+        "title": "SULPHATE RESISTING PORTLAND CEMENT\n\n1. S",
+        "rationale": "[Retrieval score: 0.781] IS 12330 : 1988 SULPHATE RESISTING PORTLAND CEMENT 1. Scope -- The manufacture, chemical and physical requirements and testing of sulphate resisting Portland cement. 3. Physical Requirement 3.1 Finene\u2026",
+        "confidence": 0.7811
+      },
+      {
+        "standard": "IS 8112: 1989",
+        "title": "43 GRADE ORDINARY PORTLAND CEMENT (F",
+        "rationale": "[Retrieval score: 0.560] IS 8112 : 1989 43 GRADE ORDINARY PORTLAND CEMENT (First Revision) 1. Scope -- Manufacture, chemical and physical requirements of 43 grade ordinary Portland cement. Note--This specification covers the\u2026",
+        "confidence": 0.5604
+      },
+      {
+        "standard": "IS 6523: 1983",
+        "title": "PRECAST REINFORCED CONCRETE DOOR AND WINDOW FRAMES (F",
+        "rationale": "[Retrieval score: 0.549] IS 6523 : 1983 PRECAST REINFORCED CONCRETE DOOR AND WINDOW FRAMES (First Revision) 1. Scope -- Requirements for precast reinforced concrete door and window frames. Use of such frames is recommended to\u2026",
+        "confidence": 0.5493
+      },
+      {
+        "standard": "IS 8042: 1989",
+        "title": "WHITE PORTLAND CEMENT (S",
+        "rationale": "[Retrieval score: 0.549] IS 8042 : 1989 WHITE PORTLAND CEMENT (Second Revision) 1 Scope 1.1 Manufacture and chemical and physical requirements of white Portland cement. Note\u00adWhite Portland cement is generally used for archite\u2026",
+        "confidence": 0.5487
+      }
+    ],
+    "latency_seconds": 0.031
+  },
+  {
+    "id": "PUB-07",
+    "query": "We are setting up a plant to produce Portland pozzolana cement that is calcined clay based. What is the applicable standard?",
+    "expected_standards": [
+      "IS 1489 (Part 2): 1991"
+    ],
+    "retrieved_standards": [
+      "IS 1489 (PART 2): 1991",
+      "IS 1489 (PART1): 1991",
+      "IS 12330: 1988",
+      "IS 6523: 1983",
+      "IS 8043: 1991"
+    ],
+    "recommendations": [
+      {
+        "standard": "IS 1489 (PART 2): 1991",
+        "title": "PORTLAND POZZOLANA CEMENT PART 2 CALCINED CLAY BASED (T",
+        "rationale": "[Retrieval score: 1.000] IS 1489 (PART 2) :1991 PORTLAND POZZOLANA CEMENT PART 2 CALCINED CLAY BASED (Third Revision) 1. Scope -- Manufacture, Physical and Chemical requriements of Portland- pozzolana cement manufactured by u\u2026",
+        "confidence": 1.0
+      },
+      {
+        "standard": "IS 1489 (PART1): 1991",
+        "title": "PORTLAND POZZOLANA CEMENT PART 1 FLY ASH BASED (T",
+        "rationale": "[Retrieval score: 0.561] IS 1489 (PART1) : 1991 PORTLAND POZZOLANA CEMENT PART 1 FLY ASH BASED (Third Revision) 1. Scope -- Covers the manufacture, physical and chemical requirements of Portland pozzolana cement using only fl\u2026",
+        "confidence": 0.5613
+      },
+      {
+        "standard": "IS 12330: 1988",
+        "title": "SULPHATE RESISTING PORTLAND CEMENT\n\n1. S",
+        "rationale": "[Retrieval score: 0.398] IS 12330 : 1988 SULPHATE RESISTING PORTLAND CEMENT 1. Scope -- The manufacture, chemical and physical requirements and testing of sulphate resisting Portland cement. 3. Physical Requirement 3.1 Finene\u2026",
+        "confidence": 0.3975
+      },
+      {
+        "standard": "IS 6523: 1983",
+        "title": "PRECAST REINFORCED CONCRETE DOOR AND WINDOW FRAMES (F",
+        "rationale": "[Retrieval score: 0.325] IS 6523 : 1983 PRECAST REINFORCED CONCRETE DOOR AND WINDOW FRAMES (First Revision) 1. Scope -- Requirements for precast reinforced concrete door and window frames. Use of such frames is recommended to\u2026",
+        "confidence": 0.3252
+      },
+      {
+        "standard": "IS 8043: 1991",
+        "title": "HYDROPHOBIC PORTLAND CEMENT (S",
+        "rationale": "[Retrieval score: 0.261] IS 8043 : 1991 HYDROPHOBIC PORTLAND CEMENT (Second Revision) 1 Scope -- Manufacture and chemical and physical requirements of hydrophobic Portland cement. Note--Hydrophobic cement deteriorates very li\u2026",
+        "confidence": 0.2605
+      }
+    ],
+    "latency_seconds": 0.026
+  },
+  {
+    "id": "PUB-08",
+    "query": "Which standard applies to masonry cement used for general purposes where mortars for masonry are required, but not intended for structural concrete?",
+    "expected_standards": [
+      "IS 3466: 1988"
+    ],
+    "retrieved_standards": [
+      "IS 3466: 1988",
+      "IS 3854: 1997",
+      "IS 14772: 2000",
+      "IS 2116: 1980",
+      "IS 4098: 1983"
+    ],
+    "recommendations": [
+      {
+        "standard": "IS 3466: 1988",
+        "title": "MASONRY CEMENT (S",
+        "rationale": "[Retrieval score: 1.000] IS 3466 : 1988 MASONRY CEMENT (Second Revision) 1. Scope -- Requirements for masonry cement to be used for all general purposes where mortars for masonry are required. Masonry cement is, however, not\u2026",
+        "confidence": 1.0
+      },
+      {
+        "standard": "IS 3854: 1997",
+        "title": "SWITCHES FOR DOMESTIC AND SIMILAR PURPOSES\n(S",
+        "rationale": "[Retrieval score: 0.553] IS 3854 : 1997 SWITCHES FOR DOMESTIC AND SIMILAR PURPOSES (Second Revision) 1. Scope 1.1 Applies to manually operated general purpose switches with a rated voltage not exceeding 440 Volts and a rated\u2026",
+        "confidence": 0.5533
+      },
+      {
+        "standard": "IS 14772: 2000",
+        "title": "GENERAL REQUIREMENTS FOR ENCLOSURES FOR ACCESSORIES FOR HOUSEHOLD AND SIMILAR FIXED ELECTRICAL INSTALLATIONS",
+        "rationale": "[Retrieval score: 0.531] IS 14772 : 2000 GENERAL REQUIREMENTS FOR ENCLOSURES FOR ACCESSORIES FOR HOUSEHOLD AND SIMILAR FIXED ELECTRICAL INSTALLATIONS \u00ad SPECIFICAION 1. Scope \u00ad This standard applies to enclosures or parts of e\u2026",
+        "confidence": 0.5314
+      },
+      {
+        "standard": "IS 2116: 1980",
+        "title": "SAND FOR MASONRY MORTARS (F",
+        "rationale": "[Retrieval score: 0.452] IS 2116 : 1980 SAND FOR MASONRY MORTARS (First Revision) 1. Scope -- Requirements of naturally occurring sands, crushed stone sands and crushed gravel sands used in mortars for construction of masonry\u2026",
+        "confidence": 0.4524
+      },
+      {
+        "standard": "IS 4098: 1983",
+        "title": "LIME POZZOLANA MIXTURE (F",
+        "rationale": "[Retrieval score: 0.430] IS 4098 : 1983 LIME POZZOLANA MIXTURE (First Revision) 1. Scope -- Requirements of lime pozzolana mixture for use in construction works. 2. Types Type Use 3. Chemical Requirements -- See Table 1 TABLE\u2026",
+        "confidence": 0.4302
+      }
+    ],
+    "latency_seconds": 0.034
+  },
+  {
+    "id": "PUB-09",
+    "query": "Looking for the standard that details the composition, manufacture, and testing of supersulphated cement, particularly for marine works or aggressive water conditions.",
+    "expected_standards": [
+      "IS 6909: 1990"
+    ],
+    "retrieved_standards": [
+      "IS 6909: 1990",
+      "IS 12330: 1988",
+      "IS 1592: 2003",
+      "IS 778: 1984",
+      "IS 5539: 1969"
+    ],
+    "recommendations": [
+      {
+        "standard": "IS 6909: 1990",
+        "title": "SUPERSULPHATED CEMENT (F",
+        "rationale": "[Retrieval score: 1.000] IS 6909 : 1990 SUPERSULPHATED CEMENT (First Revision) 1. Scope--Requirements for composition, manufacture and testing of supersulphated cement (SSC). Sulphuric anhydride 6 percent, Min Sulphide sulphu\u2026",
+        "confidence": 1.0
+      },
+      {
+        "standard": "IS 12330: 1988",
+        "title": "SULPHATE RESISTING PORTLAND CEMENT\n\n1. S",
+        "rationale": "[Retrieval score: 0.711] IS 12330 : 1988 SULPHATE RESISTING PORTLAND CEMENT 1. Scope -- The manufacture, chemical and physical requirements and testing of sulphate resisting Portland cement. 3. Physical Requirement 3.1 Finene\u2026",
+        "confidence": 0.7114
+      },
+      {
+        "standard": "IS 1592: 2003",
+        "title": "ASBESTOS CEMENT PRESSURE PIPES (F",
+        "rationale": "[Retrieval score: 0.280] IS 1592 : 2003 ASBESTOS CEMENT PRESSURE PIPES (Fourth Revision) 1. Scope--Requirements relating to plain ended asbestos cement pipes and joints intended for use under pressure; it defines certain cond\u2026",
+        "confidence": 0.2803
+      },
+      {
+        "standard": "IS 778: 1984",
+        "title": "COPPER ALLOY GATE, GLOBE AND CHECK VALVES FOR WATER WORKS PURPOSES (F",
+        "rationale": "[Retrieval score: 0.247] IS 778 : 1984 COPPER ALLOY GATE, GLOBE AND CHECK VALVES FOR WATER WORKS PURPOSES (Fourth Revision) 1. Scope -- Requirements of copper alloy gate, globe and check valves of nominal sizes 8 to 100 mm su\u2026",
+        "confidence": 0.2471
+      },
+      {
+        "standard": "IS 5539: 1969",
+        "title": "PRESERVATIVE TREATED PLYWOOD\n\n1. S",
+        "rationale": "[Retrieval score: 0.246] IS 5539 : 1969 PRESERVATIVE TREATED PLYWOOD 1. Scope \u00ad Treatment of plywood for protection against fungi, termites and other insects and marine borers and requiremments of preservatives treated plywoo\u2026",
+        "confidence": 0.2457
+      }
+    ],
+    "latency_seconds": 0.029
+  },
+  {
+    "id": "PUB-10",
+    "query": "Our company manufactures White Portland cement for architectural and decorative purposes. Which standard governs its physical and chemical requirements?",
+    "expected_standards": [
+      "IS 8042: 1989"
+    ],
+    "retrieved_standards": [
+      "IS 8042: 1989",
+      "IS 8043: 1991",
+      "IS 8112: 1989",
+      "IS 12330: 1988",
+      "IS 1489 (PART1): 1991"
+    ],
+    "recommendations": [
+      {
+        "standard": "IS 8042: 1989",
+        "title": "WHITE PORTLAND CEMENT (S",
+        "rationale": "[Retrieval score: 1.000] IS 8042 : 1989 WHITE PORTLAND CEMENT (Second Revision) 1 Scope 1.1 Manufacture and chemical and physical requirements of white Portland cement. Note\u00adWhite Portland cement is generally used for archite\u2026",
+        "confidence": 1.0
+      },
+      {
+        "standard": "IS 8043: 1991",
+        "title": "HYDROPHOBIC PORTLAND CEMENT (S",
+        "rationale": "[Retrieval score: 0.404] IS 8043 : 1991 HYDROPHOBIC PORTLAND CEMENT (Second Revision) 1 Scope -- Manufacture and chemical and physical requirements of hydrophobic Portland cement. Note--Hydrophobic cement deteriorates very li\u2026",
+        "confidence": 0.4044
+      },
+      {
+        "standard": "IS 8112: 1989",
+        "title": "43 GRADE ORDINARY PORTLAND CEMENT (F",
+        "rationale": "[Retrieval score: 0.398] IS 8112 : 1989 43 GRADE ORDINARY PORTLAND CEMENT (First Revision) 1. Scope -- Manufacture, chemical and physical requirements of 43 grade ordinary Portland cement. Note--This specification covers the\u2026",
+        "confidence": 0.3981
+      },
+      {
+        "standard": "IS 12330: 1988",
+        "title": "SULPHATE RESISTING PORTLAND CEMENT\n\n1. S",
+        "rationale": "[Retrieval score: 0.389] IS 12330 : 1988 SULPHATE RESISTING PORTLAND CEMENT 1. Scope -- The manufacture, chemical and physical requirements and testing of sulphate resisting Portland cement. 3. Physical Requirement 3.1 Finene\u2026",
+        "confidence": 0.389
+      },
+      {
+        "standard": "IS 1489 (PART1): 1991",
+        "title": "PORTLAND POZZOLANA CEMENT PART 1 FLY ASH BASED (T",
+        "rationale": "[Retrieval score: 0.387] IS 1489 (PART1) : 1991 PORTLAND POZZOLANA CEMENT PART 1 FLY ASH BASED (Third Revision) 1. Scope -- Covers the manufacture, physical and chemical requirements of Portland pozzolana cement using only fl\u2026",
+        "confidence": 0.3865
+      }
+    ],
+    "latency_seconds": 0.023
+  }
+]
