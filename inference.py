@@ -61,6 +61,16 @@ QUERY_EXPANSIONS = {
     "roofing sheet": "asbestos cement corrugated sheet roofing",
     "masonry mortar": "masonry cement mortar bricklaying",
     "aggregate concrete": "coarse fine aggregate natural sources structural concrete",
+    "aluminium door": "aluminium doors windows ventilators IS 1948",
+    "aluminium window": "aluminium windows ventilators IS 1948 1949",
+    "aluminum door": "aluminium doors windows ventilators IS 1948",
+    "aluminum window": "aluminium doors windows ventilators IS 1948",
+    "clay brick": "burnt clay building bricks common",
+    "red brick": "common burnt clay building bricks",
+    "ms pipe": "mild steel tube water supply IS 1239",
+    "gi pipe": "mild steel tube water supply galvanized IS 1239",
+    "roof tile": "burnt clay roof tiles ceramic",
+    "clay tile": "burnt clay roof tiles ceramic IS 2690",
 }
 
 # ── Load indexes (once at module import)

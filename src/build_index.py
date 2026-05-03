@@ -15,7 +15,7 @@ from sklearn.feature_extraction.text import TfidfVectorizer
 from rank_bm25 import BM25Okapi
 
 PDF_PATH  = "dataset.pdf"
-INDEX_DIR = "../index"
+INDEX_DIR = "./index"
 Path(INDEX_DIR).mkdir(exist_ok=True)
 
 # 1. Extract text from PDF 
@@ -60,24 +60,36 @@ print(f"   {len(best)} unique standards found")
 # 3. Build enriched documents
 # Add domain aliases so abbreviations (OPC, PPC, TMT…) match correctly
 ALIASES = {
-    "IS 269: 1989":          ["OPC 33", "OPC", "ordinary portland cement 33 grade"],
-    "IS 8112: 1989":         ["OPC 43", "43 grade OPC", "ordinary portland cement 43 grade"],
-    "IS 12269: 1987":        ["OPC 53", "53 grade OPC", "ordinary portland cement 53 grade", "high strength cement"],
-    "IS 1489 (PART 1): 1991":["PPC fly ash", "portland pozzolana fly ash cement"],
-    "IS 1489 (PART 2): 1991":["PPC calcined clay", "calcined clay pozzolana cement"],
-    "IS 455: 1989":          ["PSC", "portland slag cement", "blast furnace slag cement"],
-    "IS 12330: 1988":        ["SRPC", "sulphate resisting cement", "marine cement", "coastal cement"],
-    "IS 6909: 1990":         ["supersulphated cement", "aggressive water cement marine"],
-    "IS 8041: 1990":         ["RHPC", "rapid hardening cement", "fast setting cement"],
-    "IS 8042: 1989":         ["white cement", "decorative cement", "architectural cement"],
-    "IS 8043: 1991":         ["hydrophobic cement", "waterproof cement moisture resistant"],
-    "IS 383: 1970":          ["coarse aggregate", "fine aggregate", "natural aggregate concrete"],
-    "IS 458: 2003":          ["concrete pipe", "precast pipe", "drainage pipe", "RCC pipe", "water main pipe"],
-    "IS 2185 (PART 1): 1979":["concrete masonry block", "normal weight hollow block"],
-    "IS 2185 (PART 2): 1983":["lightweight concrete block", "hollow lightweight block", "aerated block"],
-    "IS 459: 1992":          ["asbestos cement sheet", "AC sheet", "corrugated roofing sheet"],
-    "IS 3466: 1988":         ["masonry cement", "mortar cement", "bricklaying cement"],
-    "IS 6452: 1989":         ["high alumina cement", "HAC", "refractory cement"],
+    "IS 269: 1989":           ["OPC 33", "OPC", "ordinary portland cement 33 grade"],
+    "IS 8112: 1989":          ["OPC 43", "43 grade OPC", "ordinary portland cement 43 grade"],
+    "IS 12269: 1987":         ["OPC 53", "53 grade OPC", "ordinary portland cement 53 grade", "high strength cement"],
+    "IS 1489 (PART 1): 1991": ["PPC fly ash", "portland pozzolana fly ash cement"],
+    "IS 1489 (PART 2): 1991": ["PPC calcined clay", "calcined clay pozzolana cement"],
+    "IS 455: 1989":           ["PSC", "portland slag cement", "blast furnace slag cement"],
+    "IS 12330: 1988":         ["SRPC", "sulphate resisting cement", "marine cement", "coastal cement"],
+    "IS 6909: 1990":          ["supersulphated cement", "aggressive water cement marine"],
+    "IS 8041: 1990":          ["RHPC", "rapid hardening cement", "fast setting cement"],
+    "IS 8042: 1989":          ["white cement", "decorative cement", "architectural cement"],
+    "IS 8043: 1991":          ["hydrophobic cement", "waterproof cement moisture resistant"],
+    "IS 383: 1970":           ["coarse aggregate", "fine aggregate", "natural aggregate concrete"],
+    "IS 458: 2003":           ["concrete pipe", "precast pipe", "drainage pipe", "RCC pipe", "water main pipe"],
+    "IS 2185 (PART 1): 1979": ["concrete masonry block", "normal weight hollow block"],
+    "IS 2185 (PART 2): 1983": ["lightweight concrete block", "hollow lightweight block", "aerated block"],
+    "IS 459: 1992":           ["asbestos cement sheet", "AC sheet", "corrugated roofing sheet"],
+    "IS 3466: 1988":          ["masonry cement", "mortar cement", "bricklaying cement"],
+    "IS 6452: 1989":          ["high alumina cement", "HAC", "refractory cement"],
+    "IS 1948: 1961":          ["aluminium doors windows ventilators", "aluminium door frame", "aluminium window frame"],
+    "IS 1949: 1961":          ["aluminium windows industrial", "aluminium industrial window"],
+    "IS 1254: 1991":          ["corrugated aluminium sheet roofing", "aluminium roofing sheet"],
+    "IS 1077: 1992":          ["common building bricks", "clay bricks construction", "red bricks"],
+    "IS 1161: 1998":          ["ERW steel tube", "steel pipe structural", "hollow steel section"],
+    "IS 1239 (PART 1): 2004": ["mild steel tube water supply", "MS pipe water", "GI pipe water supply plumbing"],
+    "IS 3589: 2001":          ["steel pipe water supply large diameter", "ERW pipe water main"],
+    "IS 5382: 1985":          ["rubber gasket pipe joint", "rubber seal pipe"],
+    "IS 1322: 1993":          ["bitumen felt waterproofing", "bituminous felt roof", "damp proofing felt"],
+    "IS 2690 (PART 1): 1992": ["burnt clay roof tiles", "clay roof tile", "Mangalore tile"],
+    "IS 654: 1992":           ["clay roofing tiles", "ceramic roof tile"],
+    "IS 2212: 1991":          ["brickwork mortar", "brick masonry construction"],
 }
 
 standards_list = []

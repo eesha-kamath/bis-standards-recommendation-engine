@@ -3,3 +3,4 @@ index/
 __pycache__/
 *.pyc
 *.pdf
+results.json
