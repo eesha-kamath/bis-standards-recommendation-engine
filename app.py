@@ -31,9 +31,9 @@ def confidence_label(score: float) -> str:
 
 def badge_color(label: str) -> str:
     return {
-        "High":   "background:#703B3B; color:#E1D0B3;",
-        "Medium": "background:#A18D6D; color:#E1D0B3;",
-        "Low":    "background:#C8B99A; color:#3d2b2b;",
+        "High":   "background:#36064D; color:#F7F6E5;",
+        "Medium": "background:#DA4848; color:#F7F6E5;",
+        "Low":    "background:#76D2DB; color:#1a1a2e;",
     }.get(label, "")
 
 
@@ -68,7 +68,7 @@ def format_results_html(result: dict) -> str:
         </div>
         """
 
-    return summary + cards if cards else "<p style='color:#A18D6D; padding:12px 0;'>No standards matched. Try rephrasing your description.</p>"
+    return summary + cards if cards else "<p style='color:#76D2DB; padding:12px 0;'>No standards matched. Try rephrasing your description.</p>"
 
 
 def format_checklist_md(result: dict) -> str:
@@ -108,7 +108,7 @@ def format_json_output(result: dict) -> str:
 
 def run_query(query: str, use_llm: bool) -> tuple:
     if not query.strip():
-        return "<p style='color:#A18D6D;padding:12px 0;'>Please enter a product description.</p>", "", ""
+        return "<p style='color:#76D2DB;padding:12px 0;'>Please enter a product description.</p>", "", ""
     result = recommend(query.strip(), use_llm=use_llm)
     return (
         format_results_html(result),
@@ -117,58 +117,68 @@ def run_query(query: str, use_llm: bool) -> tuple:
     )
 
 
+
+# Color system (self-chosen):
+# --ink:      #1C2B2B  deep teal-black  -> primary text, header bg, index circles
+# --ink-mid:  #2E4A4A  medium teal      -> section labels, active tab
+# --sage:     #4A9E8E  sage teal        -> accents, info panel, badge-high
+# --sage-lt:  #D4EDE9  pale sage        -> info panel bg, hover fills
+# --stone:    #F3F2EE  warm off-white   -> page bg
+# --card:     #FFFFFF  white            -> input, result cards
+# --panel:    #EDECEA  light stone      -> left panel bg, example tiles
+# --border:   #DDD9D3  stone border     -> all borders
+# --muted:    #7A8F8E  muted teal-grey  -> subtitles, latency, footer
+# --coral:    #C95F4A  warm coral       -> medium badge, section label accent
+
 THEME = gr.themes.Base(
     font=[gr.themes.GoogleFont("DM Sans"), "ui-sans-serif", "sans-serif"],
     font_mono=[gr.themes.GoogleFont("DM Mono"), "ui-monospace", "monospace"],
     primary_hue=gr.themes.colors.stone,
     neutral_hue=gr.themes.colors.stone,
 ).set(
-    body_background_fill="#E1D0B3",
-    block_background_fill="#E1D0B3",
+    body_background_fill="#F3F2EE",
+    block_background_fill="#F3F2EE",
     block_border_width="0px",
-    block_label_text_color="#5a3d3d",
-    button_primary_background_fill="#703B3B",
-    button_primary_background_fill_hover="#5a2f2f",
-    button_primary_text_color="#E1D0B3",
-    input_background_fill="#f5ede0",
-    input_border_color="#C8B99A",
+    block_label_text_color="#1C2B2B",
+    button_primary_background_fill="#1C2B2B",
+    button_primary_background_fill_hover="#2E4A4A",
+    button_primary_text_color="#F3F2EE",
+    input_background_fill="#ffffff",
+    input_border_color="#DDD9D3",
     input_border_width="1.5px",
-    panel_background_fill="#E1D0B3",
+    panel_background_fill="#F3F2EE",
     shadow_drop="none",
-    checkbox_background_color="#f5ede0",
-    checkbox_background_color_selected="#703B3B",
-    checkbox_border_color="#A18D6D",
+    checkbox_background_color="#ffffff",
+    checkbox_background_color_selected="#4A9E8E",
+    checkbox_border_color="#DDD9D3",
 )
 
 CUSTOM_CSS = """
-/* --- base --- */
 html, body, .gradio-container, .main, footer {
-    background: #E1D0B3 !important;
-    color: #3d2b2b !important;
+    background: #F3F2EE !important;
+    color: #1C2B2B !important;
 }
 
-/* --- header --- */
 .app-header {
-    background: #703B3B;
-    border-radius: 12px;
+    background: #1C2B2B;
+    border-radius: 14px;
     padding: 32px 38px;
     margin-bottom: 24px;
 }
 .app-header h1 {
-    font-size: 1.7rem;
+    font-size: 1.65rem;
     font-weight: 700;
-    color: #E1D0B3;
+    color: #F3F2EE;
     margin: 0 0 8px 0;
     letter-spacing: -0.02em;
 }
 .app-header p {
-    font-size: 0.97rem;
-    color: #c9aa99;
+    font-size: 0.96rem;
+    color: #7AAEAA;
     margin: 0;
     line-height: 1.6;
 }
 
-/* --- two-column row --- */
 .main-row {
     gap: 20px !important;
     align-items: stretch !important;
@@ -177,112 +187,101 @@ html, body, .gradio-container, .main, footer {
     align-self: stretch !important;
 }
 
-/* --- left panel card --- */
 .left-panel {
-    background: #EDE3CE;
-    border: 1px solid #C8B99A;
-    border-radius: 12px;
+    background: #EDECEA;
+    border: 1px solid #DDD9D3;
+    border-radius: 14px;
     padding: 24px 26px;
     display: flex;
     flex-direction: column;
-    gap: 0;
     height: 100%;
     box-sizing: border-box;
 }
 
-/* --- input box --- */
 .main-input textarea {
     font-size: 0.97rem !important;
     line-height: 1.65 !important;
-    color: #3d2b2b !important;
-    background: #faf6ef !important;
-    border-color: #C8B99A !important;
+    color: #1C2B2B !important;
+    background: #ffffff !important;
+    border-color: #DDD9D3 !important;
     border-radius: 8px !important;
 }
 .main-input label span {
     font-size: 0.9rem !important;
     font-weight: 600 !important;
-    color: #5a3d3d !important;
+    color: #2E4A4A !important;
     letter-spacing: 0.01em;
 }
 
-/* --- submit button row --- */
-.action-row {
-    margin-top: 12px;
-    display: flex;
-    align-items: center;
-    gap: 14px;
-}
 .submit-btn > button {
     height: 46px !important;
-    font-size: 0.95rem !important;
+    font-size: 0.93rem !important;
     font-weight: 600 !important;
-    border-radius: 8px !important;
+    border-radius: 9px !important;
+    letter-spacing: 0.01em;
     min-width: 200px;
 }
+
 .llm-toggle label {
     font-size: 0.86rem !important;
-    color: #5a3d3d !important;
+    color: #2E4A4A !important;
 }
 
-/* --- section label --- */
 .section-label {
-    font-size: 0.7rem;
+    font-size: 0.68rem;
     font-weight: 700;
-    letter-spacing: 0.1em;
+    letter-spacing: 0.12em;
     text-transform: uppercase;
-    color: #703B3B;
+    color: #7A8F8E;
     margin: 22px 0 10px 0;
 }
 
-/* --- example query blocks --- */
 .example-links {
     display: flex;
     flex-direction: column;
     gap: 6px;
 }
 .example-links button {
-    font-size: 0.87rem !important;
+    font-size: 0.86rem !important;
     font-family: 'DM Sans', sans-serif !important;
     text-align: left !important;
     justify-content: flex-start !important;
-    color: #3d2b2b !important;
-    background: #D9C9A8 !important;
-    border: 1px solid #C8B99A !important;
+    color: #2E4A4A !important;
+    background: #E6E4E0 !important;
+    border: 1px solid #DDD9D3 !important;
     padding: 9px 14px !important;
-    border-radius: 7px !important;
+    border-radius: 8px !important;
     box-shadow: none !important;
-    transition: background 0.15s, border-color 0.15s;
+    transition: background 0.15s, border-color 0.15s, color 0.15s;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
 }
 .example-links button:hover {
-    background: #cfc0a0 !important;
-    border-color: #A18D6D !important;
-    color: #3d2b2b !important;
+    background: #D4EDE9 !important;
+    border-color: #4A9E8E !important;
+    color: #1C2B2B !important;
 }
 
-/* --- info panel (right) --- */
 .info-panel {
-    background: #9BB4C0;
-    border-radius: 12px;
+    background: #D4EDE9;
+    border: 1px solid #B2D9D3;
+    border-radius: 14px;
     padding: 26px 28px;
     height: 100%;
     box-sizing: border-box;
 }
 .info-panel h3 {
-    font-size: 0.7rem;
+    font-size: 0.68rem;
     font-weight: 700;
-    letter-spacing: 0.1em;
+    letter-spacing: 0.12em;
     text-transform: uppercase;
-    color: #1e2e36;
+    color: #2E4A4A;
     margin: 0 0 12px 0;
-    opacity: 0.75;
 }
 .info-panel li {
-    font-size: 0.93rem;
-    color: #1e2e36;
+    font-size: 0.92rem;
+    color: #1C2B2B;
     line-height: 1.75;
     margin-bottom: 2px;
 }
@@ -298,49 +297,51 @@ html, body, .gradio-container, .main, footer {
     margin-top: 12px;
 }
 .badge {
-    font-size: 0.82rem;
+    font-size: 0.8rem;
     font-weight: 600;
-    padding: 6px 13px;
+    padding: 5px 13px;
     border-radius: 6px;
     display: inline-block;
     width: fit-content;
+    letter-spacing: 0.01em;
 }
-.badge-high   { background: #703B3B; color: #E1D0B3; }
-.badge-medium { background: #A18D6D; color: #E1D0B3; }
-.badge-low    { background: #C8B99A; color: #3d2b2b; }
+.badge-high   { background: #1C2B2B; color: #D4EDE9; }
+.badge-medium { background: #C95F4A; color: #FEF0ED; }
+.badge-low    { background: #B2D9D3; color: #1C2B2B; }
 
 .info-note {
-    font-size: 0.78rem;
-    color: #1e2e36;
+    font-size: 0.77rem;
+    color: #4A7A76;
     margin-top: 18px;
-    opacity: 0.6;
     line-height: 1.55;
 }
 
-/* --- tabs --- */
 .tab-nav {
-    border-bottom: 2px solid #C8B99A !important;
-    margin-top: 8px !important;
+    border-bottom: 1.5px solid #DDD9D3 !important;
+    margin-top: 10px !important;
 }
 .tab-nav button {
     font-family: 'DM Sans', sans-serif !important;
-    font-size: 0.9rem !important;
+    font-size: 0.88rem !important;
     font-weight: 600 !important;
-    color: #A18D6D !important;
+    color: #7A8F8E !important;
     background: transparent !important;
     border: none !important;
     border-bottom: 2px solid transparent !important;
     padding: 10px 22px !important;
     border-radius: 0 !important;
-    margin-bottom: -2px;
+    margin-bottom: -1.5px;
+    transition: color 0.15s;
 }
 .tab-nav button.selected {
-    color: #703B3B !important;
-    border-bottom: 2px solid #703B3B !important;
+    color: #2E4A4A !important;
+    border-bottom: 2px solid #4A9E8E !important;
     background: transparent !important;
 }
+.tab-nav button:hover:not(.selected) {
+    color: #2E4A4A !important;
+}
 
-/* --- result summary line --- */
 .res-summary {
     display: flex;
     align-items: baseline;
@@ -349,22 +350,25 @@ html, body, .gradio-container, .main, footer {
     padding-top: 4px;
 }
 .res-count {
-    font-size: 1rem;
+    font-size: 0.97rem;
     font-weight: 700;
-    color: #703B3B;
+    color: #1C2B2B;
 }
 .res-latency {
-    font-size: 0.8rem;
-    color: #A18D6D;
+    font-size: 0.79rem;
+    color: #7A8F8E;
 }
 
-/* --- result cards --- */
 .res-card {
-    background: #faf6ef;
-    border: 1px solid #C8B99A;
-    border-radius: 10px;
+    background: #ffffff;
+    border: 1px solid #DDD9D3;
+    border-radius: 12px;
     padding: 18px 20px;
-    margin-bottom: 12px;
+    margin-bottom: 10px;
+    transition: border-color 0.15s;
+}
+.res-card:hover {
+    border-color: #4A9E8E;
 }
 .res-card-top {
     display: flex;
@@ -372,10 +376,10 @@ html, body, .gradio-container, .main, footer {
     gap: 14px;
 }
 .res-index {
-    font-size: 0.78rem;
+    font-size: 0.76rem;
     font-weight: 700;
-    color: #faf6ef;
-    background: #703B3B;
+    color: #D4EDE9;
+    background: #1C2B2B;
     border-radius: 50%;
     width: 24px;
     height: 24px;
@@ -391,52 +395,50 @@ html, body, .gradio-container, .main, footer {
 .res-standard {
     font-size: 0.95rem;
     font-weight: 700;
-    color: #3d2b2b;
+    color: #1C2B2B;
     margin-bottom: 3px;
 }
 .res-title {
-    font-size: 0.85rem;
-    color: #7a6050;
+    font-size: 0.84rem;
+    color: #7A8F8E;
     line-height: 1.45;
 }
 .res-badge {
-    font-size: 0.75rem;
+    font-size: 0.74rem;
     font-weight: 700;
-    padding: 4px 11px;
+    padding: 4px 10px;
     border-radius: 5px;
     white-space: nowrap;
     flex-shrink: 0;
+    letter-spacing: 0.01em;
 }
 .res-rationale {
-    font-size: 0.88rem;
-    color: #4a3535;
-    line-height: 1.7;
+    font-size: 0.87rem;
+    color: #2E4A4A;
+    line-height: 1.72;
     margin-top: 12px;
     padding-top: 12px;
-    border-top: 1px solid #DDD0BB;
+    border-top: 1px solid #EDECEA;
 }
 
-/* --- checklist tab --- */
 .checklist-out .prose {
     font-size: 0.93rem !important;
     line-height: 1.8 !important;
-    color: #3d2b2b !important;
+    color: #1C2B2B !important;
 }
 
-/* --- json output --- */
 .json-out code, .json-out pre {
     font-size: 0.83rem !important;
-    background: #EDE3CE !important;
-    color: #3d2b2b !important;
+    background: #EDECEA !important;
+    color: #1C2B2B !important;
 }
 
-/* --- footer --- */
 .app-footer {
-    border-top: 1px solid #C8B99A;
+    border-top: 1px solid #DDD9D3;
     margin-top: 20px;
     padding-top: 14px;
-    font-size: 0.76rem;
-    color: #8a7060;
+    font-size: 0.75rem;
+    color: #7A8F8E;
     line-height: 2;
 }
 """
@@ -467,7 +469,7 @@ with gr.Blocks(
                 elem_classes=["main-input"],
             )
 
-            with gr.Row(elem_classes=["action-row"]):
+            with gr.Row():
                 use_llm_toggle = gr.Checkbox(
                     label="Generate plain-English rationales (requires Grok API key)",
                     value=False,
@@ -516,7 +518,7 @@ with gr.Blocks(
     with gr.Tabs():
         with gr.Tab("Recommendations"):
             results_html = gr.HTML(
-                "<p style='color:#A18D6D; padding: 8px 0; font-size:0.93rem;'>Results will appear here after you submit a query.</p>"
+                "<p style='color:#76D2DB; padding: 8px 0; font-size:0.93rem;'>Results will appear here after you submit a query.</p>"
             )
         with gr.Tab("Compliance Checklist"):
             checklist_md = gr.Markdown(
